@@ -1,0 +1,16 @@
+<script>
+	var a = +prompt("Введите, пожалуйста, сумму вклада");
+	var b = +prompt("Введите, пожалуйста, процент вклада");
+	var c = a;
+	for(var i = 0; i<5; i++) {
+		var j = i + 1;
+		c = a;
+		c = (c/100)*b;
+		a = a+c;
+		document.write("После " + j + " лет вклада " + a.toFixed(2) + " рублей " + "<br/>");
+	}
+document.write("Сумма после пяти лет вклада: " + a.toFixed(2) + " рублей ");
+
+
+
+</script>
